@@ -8,9 +8,7 @@ plugins {
 android {
     namespace = "com.example.mytesting11"
     compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
+        version = release(37)
     }
 
     defaultConfig {
@@ -53,6 +51,8 @@ dependencies {
     implementation(libs.navigation.compose)
     implementation(libs.retrofit.serialization)
     implementation(libs.kotlinx.serialization.json)
+    // Material Icons
+    implementation("androidx.compose.material:material-icons-core:1.7.8")
     implementation(libs.okhttp)
     implementation(libs.okhttp.logging)
     testImplementation(libs.junit)
